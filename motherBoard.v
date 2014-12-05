@@ -104,22 +104,14 @@ serialConn serial1 (
   serialPortState_1
 );
 
-wire [7:0] serial2uart;
-wire [7:0] uart2serial;
-wire tbre_2, tsre_2, dataReady_2, rdn_2, wrn_2, ram1Oe_2, ram1We_2, ram1En_2;
-wire parity_error_2, framing_error_2;
-
 serialConn2 serial2(
   clk11M, rst,
-  tbre_2, tsre_2, dataReady_2,
   memRW, index,
   MeMemResult,
-  uart2serial,
-  serial2uart,
-  rdn_2, wrn_2,
-  ram1Oe_2, ram1We_2, ram1En_2,
   serialPortDataRead_2,
-  serialPortState_2
+  serialPortState_2,
+  u_txd,
+  u_rxd
 );
 
 

@@ -91,5 +91,5 @@ NET "dataReady_1" LOC=A16;
 
 NET "clk11M" LOC=B8;
 
-NET "u_rxd" LOC = V5;
-NET "u_txd" LOC = K3;
+NET "u_txd" LOC = V5;
+NET "u_rxd" LOC = K3;

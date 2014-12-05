@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Dec 05 20:01:37 2014
+// Written by: Map P.20131013 on Fri Dec 05 21:21:22 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -26,8 +26,8 @@ COMP "vgaG<0>" LOCATE = SITE "B4" LEVEL 1;
 COMP "vgaG<1>" LOCATE = SITE "C4" LEVEL 1;
 COMP "vgaG<2>" LOCATE = SITE "C5" LEVEL 1;
 COMP "vgaVs" LOCATE = SITE "E6" LEVEL 1;
-COMP "u_rxd" LOCATE = SITE "V5" LEVEL 1;
-COMP "u_txd" LOCATE = SITE "K3" LEVEL 1;
+COMP "u_rxd" LOCATE = SITE "K3" LEVEL 1;
+COMP "u_txd" LOCATE = SITE "V5" LEVEL 1;
 COMP "vgaR<0>" LOCATE = SITE "A7" LEVEL 1;
 COMP "vgaR<1>" LOCATE = SITE "C3" LEVEL 1;
 COMP "vgaR<2>" LOCATE = SITE "A4" LEVEL 1;

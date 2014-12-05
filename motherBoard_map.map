@@ -9,7 +9,7 @@ Target Device  : xc3s1200e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Fri Dec 05 20:01:10 2014
+Mapped Date    : Fri Dec 05 21:20:56 2014
 
 Mapping design into LUTs...
 Running directed packing...
@@ -20,7 +20,7 @@ WARNING:Pack:266 - The function generator naive/calculator/res_cmp_eq00031
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net wrn_2 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net serial2/wrn is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <clkClick_IBUF> is incomplete. The
@@ -33,18 +33,18 @@ Design Summary:
 Number of errors:      0
 Number of warnings:    3
 Logic Utilization:
-  Total Number Slice Registers:         659 out of  17,344    3%
-    Number used as Flip Flops:          617
+  Total Number Slice Registers:         661 out of  17,344    3%
+    Number used as Flip Flops:          619
     Number used as Latches:              42
-  Number of 4 input LUTs:             9,867 out of  17,344   56%
+  Number of 4 input LUTs:             9,813 out of  17,344   56%
 Logic Distribution:
-  Number of occupied Slices:          7,748 out of   8,672   89%
-    Number of Slices containing only related logic:   7,748 out of   7,748 100%
-    Number of Slices containing unrelated logic:          0 out of   7,748   0%
+  Number of occupied Slices:          7,722 out of   8,672   89%
+    Number of Slices containing only related logic:   7,722 out of   7,722 100%
+    Number of Slices containing unrelated logic:          0 out of   7,722   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:      13,931 out of  17,344   80%
-    Number used as logic:             9,867
-    Number used as a route-thru:      4,064
+  Total Number of 4 input LUTs:      13,878 out of  17,344   80%
+    Number used as logic:             9,813
+    Number used as a route-thru:      4,065
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -52,10 +52,10 @@ Logic Distribution:
   Number of bonded IOBs:                 86 out of     250   34%
   Number of BUFGMUXs:                     5 out of      24   20%
 
-Average Fanout of Non-Clock Nets:                2.86
+Average Fanout of Non-Clock Nets:                2.85
 
-Peak Memory Usage:  513 MB
-Total REAL time to MAP completion:  33 secs 
+Peak Memory Usage:  508 MB
+Total REAL time to MAP completion:  30 secs 
 Total CPU time to MAP completion:   29 secs 
 
 NOTES:
