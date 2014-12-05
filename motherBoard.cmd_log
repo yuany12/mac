@@ -95,3 +95,44 @@ map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o mother
 par -w -intstyle ise -ol high -t 1 motherBoard_map.ncd motherBoard.ncd motherBoard.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml motherBoard.twx motherBoard.ncd -o motherBoard.twr motherBoard.pcf -ucf motherBoard.ucf 
 bitgen -intstyle ise -f motherBoard.ut motherBoard.ncd 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc motherBoard.ucf -p xc3s1200e-fg320-4 motherBoard.ngc motherBoard.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o motherBoard_map.ncd motherBoard.ngd motherBoard.pcf 
+par -w -intstyle ise -ol high -t 1 motherBoard_map.ncd motherBoard.ncd motherBoard.pcf 
+bitgen -intstyle ise -f motherBoard.ut motherBoard.ncd 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc motherBoard.ucf -p xc3s1200e-fg320-4 motherBoard.ngc motherBoard.ngd  
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc motherBoard.ucf -p xc3s1200e-fg320-4 motherBoard.ngc motherBoard.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc motherBoard.ucf -p xc3s1200e-fg320-4 motherBoard.ngc motherBoard.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o motherBoard_map.ncd motherBoard.ngd motherBoard.pcf 
+par -w -intstyle ise -ol high -t 1 motherBoard_map.ncd motherBoard.ncd motherBoard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml motherBoard.twx motherBoard.ncd -o motherBoard.twr motherBoard.pcf -ucf motherBoard.ucf 
+bitgen -intstyle ise -f motherBoard.ut motherBoard.ncd 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc motherBoard.ucf -p xc3s1200e-fg320-4 motherBoard.ngc motherBoard.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o motherBoard_map.ncd motherBoard.ngd motherBoard.pcf 
+par -w -intstyle ise -ol high -t 1 motherBoard_map.ncd motherBoard.ncd motherBoard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml motherBoard.twx motherBoard.ncd -o motherBoard.twr motherBoard.pcf -ucf motherBoard.ucf 
+bitgen -intstyle ise -f motherBoard.ut motherBoard.ncd 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc motherBoard.ucf -p xc3s1200e-fg320-4 motherBoard.ngc motherBoard.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o motherBoard_map.ncd motherBoard.ngd motherBoard.pcf 
+par -w -intstyle ise -ol high -t 1 motherBoard_map.ncd motherBoard.ncd motherBoard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml motherBoard.twx motherBoard.ncd -o motherBoard.twr motherBoard.pcf -ucf motherBoard.ucf 
+bitgen -intstyle ise -f motherBoard.ut motherBoard.ncd 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+xst -intstyle ise -ifn "G:/GitHub/makeacomputer/motherBoard.xst" -ofn "G:/GitHub/makeacomputer/motherBoard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc motherBoard.ucf -p xc3s1200e-fg320-4 motherBoard.ngc motherBoard.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o motherBoard_map.ncd motherBoard.ngd motherBoard.pcf 
+par -w -intstyle ise -ol high -t 1 motherBoard_map.ncd motherBoard.ncd motherBoard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml motherBoard.twx motherBoard.ncd -o motherBoard.twr motherBoard.pcf -ucf motherBoard.ucf 
+bitgen -intstyle ise -f motherBoard.ut motherBoard.ncd 

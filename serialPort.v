@@ -1,7 +1,8 @@
-module serial_port(
+module serialConn(
   input clk, rst,              // clk & rst
   input tbre, tsre, dataReady,    // wires linked with CPLD
-  input [1:0] mode, index,
+  input [1:0] mode,
+  input [2:0] index,
   input [7:0] dataToSend,    // toggle switches controlling data to send to serial port
   inout [7:0] ram1Data,       // bus
   output reg rdn, wrn,
@@ -38,9 +39,9 @@ always @(*) begin
   else
   begin
     if (clk) // posedge
-	 if (index == 2'b10 && mode == MODE_WRITE)
+	 if (index == 3'b010 && mode == MODE_WRITE)
 		wrn <= 0;
-    else if (index == 2'b10 && mode == MODE_READ)
+    else if (index == 3'b010 && mode == MODE_READ)
 	 begin
       rdn <= 0;
       data <= ram1Data;

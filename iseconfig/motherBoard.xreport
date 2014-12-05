@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-12-05T15:16:52</DateModified>
+  <DateModified>2014-12-05T16:58:37</DateModified>
   <ModuleName>motherBoard</ModuleName>
-  <SummaryTimeStamp>2014-12-01T14:36:26</SummaryTimeStamp>
-  <SavedFilePath>Z:/Documents/2014fall/co/makeacomputer.modify/iseconfig/motherBoard.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>Z:/Documents/2014fall/co/makeacomputer.modify\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2014-12-05T16:38:25</SummaryTimeStamp>
+  <SavedFilePath>G:/GitHub/makeacomputer/iseconfig/motherBoard.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>G:/GitHub/makeacomputer\</ImplementationReportsDirectory>
   <DateInitialized>2014-11-18T20:28:23</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

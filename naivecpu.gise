@@ -68,6 +68,7 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="motherBoard_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="motherBoard_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="motherBoard_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="motherBoard_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="motherBoard_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="motherboard.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="motherboard.bit" xil_pn:subbranch="FPGAConfiguration"/>
@@ -167,11 +168,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1417682423" xil_pn:in_ck="-5435158301751371484" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7326362176527365353" xil_pn:start_ts="1417682351">
+    <transform xil_pn:end_ts="1417780849" xil_pn:in_ck="8278716940217340547" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7326362176527365353" xil_pn:start_ts="1417780700">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -182,31 +182,28 @@
       <outfile xil_pn:name="motherBoard.stx"/>
       <outfile xil_pn:name="motherBoard.syr"/>
       <outfile xil_pn:name="motherBoard.xst"/>
+      <outfile xil_pn:name="motherBoard_vhdl.prj"/>
       <outfile xil_pn:name="motherBoard_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1416317999" xil_pn:in_ck="-9166367744054824829" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5814941763369945351" xil_pn:start_ts="1416317999">
+    <transform xil_pn:end_ts="1417773545" xil_pn:in_ck="-9166367744054824829" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5814941763369945351" xil_pn:start_ts="1417773544">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1417682431" xil_pn:in_ck="5685205221716290080" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8214031810170328295" xil_pn:start_ts="1417682423">
+    <transform xil_pn:end_ts="1417780866" xil_pn:in_ck="5685205221716290080" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8214031810170328295" xil_pn:start_ts="1417780849">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="motherBoard.bld"/>
       <outfile xil_pn:name="motherBoard.ngd"/>
       <outfile xil_pn:name="motherBoard_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1417682447" xil_pn:in_ck="-7287535468905918463" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3188416950630775481" xil_pn:start_ts="1417682431">
+    <transform xil_pn:end_ts="1417780904" xil_pn:in_ck="-7287535468905918463" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3188416950630775481" xil_pn:start_ts="1417780866">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="motherBoard.pcf"/>
       <outfile xil_pn:name="motherBoard_map.map"/>
@@ -217,11 +214,10 @@
       <outfile xil_pn:name="motherBoard_summary.xml"/>
       <outfile xil_pn:name="motherBoard_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1417682493" xil_pn:in_ck="-711783460768465670" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="6268780068511726196" xil_pn:start_ts="1417682447">
+    <transform xil_pn:end_ts="1417781004" xil_pn:in_ck="-711783460768465670" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="6268780068511726196" xil_pn:start_ts="1417780904">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="motherBoard.ncd"/>
       <outfile xil_pn:name="motherBoard.pad"/>
@@ -233,11 +229,10 @@
       <outfile xil_pn:name="motherBoard_pad.txt"/>
       <outfile xil_pn:name="motherBoard_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1417682514" xil_pn:in_ck="-9166367744054832454" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1417682493">
+    <transform xil_pn:end_ts="1417781046" xil_pn:in_ck="-9166367744054832454" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1417781004">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="motherBoard.ut"/>
       <outfile xil_pn:name="motherboard.bgn"/>
@@ -247,21 +242,23 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1417605412" xil_pn:in_ck="-9166322738979061596" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1417605411">
+    <transform xil_pn:end_ts="1417781062" xil_pn:in_ck="-9166322738979061596" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1417781046">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_impact.cmd"/>
+      <outfile xil_pn:name="_impact.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1417766663" xil_pn:in_ck="-9166322738979061596" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="8214031810170328295" xil_pn:start_ts="1417766662">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1417682493" xil_pn:in_ck="8013780911946860541" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1417682486">
+    <transform xil_pn:end_ts="1417781004" xil_pn:in_ck="8013780911946860541" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1417780991">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="motherBoard.twr"/>
       <outfile xil_pn:name="motherBoard.twx"/>

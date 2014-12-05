@@ -50,6 +50,17 @@ instructionDecoder decoder (
   jumpControl
 );
 
+Register registerFile (
+  clk, rst,
+  registerS, registerM,
+  tWriteEnable, tToWrite,
+  MeRegisterT,
+  MeCalResult,
+  registerValue,
+  originValueS, originValueM,
+  t
+);
+
 flipflop #(16) IfPCFF (clk, rst, nextPC, IfPC);
 flipflop #(16) IdIRFF (clk, rst, IfIR, IdIR);
 flipflop #(4) ExRegisterTFF ( clk, rst, IdRegisterT, ExRegisterT );
@@ -123,17 +134,6 @@ byPass ExIdByPassM (
   ExRegisterT,
   ExCalResult,
   rm
-);
-
-Register registerFile (
-  clk, rst,
-  registerS, registerM,
-  tWriteEnable, tToWrite,
-  MeRegisterT,
-  MeCalResult,
-  registerValue,
-  originValueS, originValueM,
-  t
 );
 
 endmodule

@@ -11,10 +11,6 @@ reg [15:0] currentPC, instruction, opX, opY;
 wire[15:0] imm16 = {8'd0, instruction[7:0]};
 wire[15:0] imm16s = { {8{instruction[7]}}, instruction[7:0]};
 wire[15:0] imm16from4s = { {12{instruction[3]}}, instruction[3:0]};
-<<<<<<< HEAD
-=======
-//wire[15:0] imm16from4s = {instruction[3] ? 12'hfff : 12'h000, instruction[3:0]};
->>>>>>> 4c73a4a27c17f9e1732ec14b0fdd4ad8673bece9
 wire[3:0] shift_imm4 = instruction[4:2] ? instruction[4:2] : 8;
 
 always @ (negedge clk or negedge rst)
