@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\Documents\2014fall\co\makeacomputer.modify\motherBoard.ncd
+OUTFILE=Z:\Documents\2014fall\co\makeacomputer.modify\motherBoard.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-4fg320
+WORKINGDIR=Z:\Documents\2014fall\co\makeacomputer.modify
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

@@ -1,0 +1,433 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml motherBoard.twx motherBoard.ncd -o motherBoard.twr
+motherBoard.pcf -ucf motherBoard.ucf
+
+Design file:              motherBoard.ncd
+Physical constraint file: motherBoard.pcf
+Device,package,speed:     xc3s1200e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clkUART
+--------------+------------+------------+------------------+--------+
+              |Max Setup to|Max Hold to |                  | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------------+--------+
+dataReady     |    2.356(R)|   -0.613(R)|clkUART_IBUF      |   0.000|
+              |   10.041(F)|   -1.715(F)|clkUART_IBUF      |   0.000|
+memDataBus<0> |    1.593(R)|   -0.038(R)|clkUART_IBUF      |   0.000|
+              |    1.048(F)|    0.393(F)|clkUART_IBUF      |   0.000|
+memDataBus<1> |    1.630(R)|   -0.067(R)|clkUART_IBUF      |   0.000|
+              |    1.405(F)|    0.108(F)|clkUART_IBUF      |   0.000|
+memDataBus<2> |    1.216(R)|    0.272(R)|clkUART_IBUF      |   0.000|
+              |    0.961(F)|    0.467(F)|clkUART_IBUF      |   0.000|
+memDataBus<3> |    1.815(R)|   -0.208(R)|clkUART_IBUF      |   0.000|
+              |    1.592(F)|   -0.038(F)|clkUART_IBUF      |   0.000|
+memDataBus<4> |    1.557(R)|   -0.016(R)|clkUART_IBUF      |   0.000|
+              |    0.716(F)|    0.651(F)|clkUART_IBUF      |   0.000|
+memDataBus<5> |    1.573(R)|   -0.028(R)|clkUART_IBUF      |   0.000|
+              |    1.590(F)|   -0.047(F)|clkUART_IBUF      |   0.000|
+memDataBus<6> |    1.581(R)|   -0.025(R)|clkUART_IBUF      |   0.000|
+              |    1.620(F)|   -0.072(F)|clkUART_IBUF      |   0.000|
+memDataBus<7> |    1.706(R)|   -0.125(R)|clkUART_IBUF      |   0.000|
+              |    0.967(F)|    0.451(F)|clkUART_IBUF      |   0.000|
+memDataBus<8> |    1.408(R)|    0.125(R)|clkUART_IBUF      |   0.000|
+              |    1.293(F)|    0.195(F)|clkUART_IBUF      |   0.000|
+memDataBus<9> |    0.803(R)|    0.609(R)|clkUART_IBUF      |   0.000|
+              |    0.986(F)|    0.441(F)|clkUART_IBUF      |   0.000|
+memDataBus<10>|    0.949(R)|    0.485(R)|clkUART_IBUF      |   0.000|
+              |    1.621(F)|   -0.077(F)|clkUART_IBUF      |   0.000|
+memDataBus<11>|    1.488(R)|    0.054(R)|clkUART_IBUF      |   0.000|
+              |    1.607(F)|   -0.065(F)|clkUART_IBUF      |   0.000|
+memDataBus<12>|    0.818(R)|    0.594(R)|clkUART_IBUF      |   0.000|
+              |    1.010(F)|    0.422(F)|clkUART_IBUF      |   0.000|
+memDataBus<13>|    0.423(R)|    0.910(R)|clkUART_IBUF      |   0.000|
+              |    1.177(F)|    0.287(F)|clkUART_IBUF      |   0.000|
+memDataBus<14>|    1.549(R)|   -0.016(R)|clkUART_IBUF      |   0.000|
+              |    1.635(F)|   -0.079(F)|clkUART_IBUF      |   0.000|
+memDataBus<15>|    0.993(R)|    0.429(R)|clkUART_IBUF      |   0.000|
+              |    1.820(F)|   -0.228(F)|clkUART_IBUF      |   0.000|
+tbre          |    3.073(R)|   -1.231(R)|clkUART_IBUF      |   0.000|
+              |   12.500(F)|   -3.483(F)|clkUART_IBUF      |   0.000|
+tsre          |    3.063(R)|   -1.224(R)|clkUART_IBUF      |   0.000|
+              |   12.514(F)|   -3.494(F)|clkUART_IBUF      |   0.000|
+--------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock rst
+--------------+------------+------------+------------------+--------+
+              |Max Setup to|Max Hold to |                  | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+--------------+------------+------------+------------------+--------+
+ram1DataBus<0>|    0.902(F)|    0.525(F)|rst_IBUF          |   0.000|
+ram1DataBus<1>|    0.532(F)|    0.821(F)|rst_IBUF          |   0.000|
+ram1DataBus<2>|    1.308(F)|    0.198(F)|rst_IBUF          |   0.000|
+ram1DataBus<3>|    1.016(F)|    0.432(F)|rst_IBUF          |   0.000|
+ram1DataBus<4>|    0.981(F)|    0.462(F)|rst_IBUF          |   0.000|
+ram1DataBus<5>|    0.985(F)|    0.459(F)|rst_IBUF          |   0.000|
+ram1DataBus<6>|    1.205(F)|    0.285(F)|rst_IBUF          |   0.000|
+ram1DataBus<7>|    1.747(F)|   -0.165(F)|rst_IBUF          |   0.000|
+--------------+------------+------------+------------------+--------+
+
+Clock clkUART to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+leddebug<0>   |   20.379(R)|clkUART_IBUF      |   0.000|
+              |   21.000(F)|clkUART_IBUF      |   0.000|
+leddebug<1>   |   20.370(R)|clkUART_IBUF      |   0.000|
+              |   20.874(F)|clkUART_IBUF      |   0.000|
+leddebug<2>   |   20.069(R)|clkUART_IBUF      |   0.000|
+              |   20.523(F)|clkUART_IBUF      |   0.000|
+leddebug<3>   |   19.943(R)|clkUART_IBUF      |   0.000|
+              |   20.059(F)|clkUART_IBUF      |   0.000|
+leddebug<4>   |   20.137(R)|clkUART_IBUF      |   0.000|
+              |   20.787(F)|clkUART_IBUF      |   0.000|
+leddebug<5>   |   20.384(R)|clkUART_IBUF      |   0.000|
+              |   20.501(F)|clkUART_IBUF      |   0.000|
+leddebug<6>   |   19.905(R)|clkUART_IBUF      |   0.000|
+              |   20.482(F)|clkUART_IBUF      |   0.000|
+leddebug<7>   |   20.490(R)|clkUART_IBUF      |   0.000|
+              |   20.243(F)|clkUART_IBUF      |   0.000|
+leddebug<8>   |   19.942(R)|clkUART_IBUF      |   0.000|
+              |   20.058(F)|clkUART_IBUF      |   0.000|
+leddebug<9>   |   20.103(R)|clkUART_IBUF      |   0.000|
+              |   20.723(F)|clkUART_IBUF      |   0.000|
+leddebug<10>  |   20.037(R)|clkUART_IBUF      |   0.000|
+              |   20.348(F)|clkUART_IBUF      |   0.000|
+leddebug<11>  |   20.332(R)|clkUART_IBUF      |   0.000|
+              |   20.448(F)|clkUART_IBUF      |   0.000|
+leddebug<12>  |   20.097(R)|clkUART_IBUF      |   0.000|
+              |   20.451(F)|clkUART_IBUF      |   0.000|
+leddebug<13>  |   19.843(R)|clkUART_IBUF      |   0.000|
+              |   20.493(F)|clkUART_IBUF      |   0.000|
+leddebug<14>  |   21.004(R)|clkUART_IBUF      |   0.000|
+              |   21.120(F)|clkUART_IBUF      |   0.000|
+leddebug<15>  |   20.185(R)|clkUART_IBUF      |   0.000|
+              |   20.307(F)|clkUART_IBUF      |   0.000|
+memAddrBus<0> |   12.110(R)|clkUART_IBUF      |   0.000|
+              |   12.950(F)|clkUART_IBUF      |   0.000|
+memAddrBus<1> |   10.428(R)|clkUART_IBUF      |   0.000|
+              |   11.281(F)|clkUART_IBUF      |   0.000|
+memAddrBus<2> |   10.071(R)|clkUART_IBUF      |   0.000|
+              |   10.965(F)|clkUART_IBUF      |   0.000|
+memAddrBus<3> |   10.920(R)|clkUART_IBUF      |   0.000|
+              |   11.542(F)|clkUART_IBUF      |   0.000|
+memAddrBus<4> |   11.333(R)|clkUART_IBUF      |   0.000|
+              |   11.944(F)|clkUART_IBUF      |   0.000|
+memAddrBus<5> |   11.714(R)|clkUART_IBUF      |   0.000|
+              |   12.031(F)|clkUART_IBUF      |   0.000|
+memAddrBus<6> |   10.294(R)|clkUART_IBUF      |   0.000|
+              |   10.865(F)|clkUART_IBUF      |   0.000|
+memAddrBus<7> |   10.914(R)|clkUART_IBUF      |   0.000|
+              |   12.448(F)|clkUART_IBUF      |   0.000|
+memAddrBus<8> |   11.511(R)|clkUART_IBUF      |   0.000|
+              |   12.523(F)|clkUART_IBUF      |   0.000|
+memAddrBus<9> |   10.919(R)|clkUART_IBUF      |   0.000|
+              |   11.896(F)|clkUART_IBUF      |   0.000|
+memAddrBus<10>|   11.340(R)|clkUART_IBUF      |   0.000|
+              |   11.870(F)|clkUART_IBUF      |   0.000|
+memAddrBus<11>|   11.445(R)|clkUART_IBUF      |   0.000|
+              |   12.356(F)|clkUART_IBUF      |   0.000|
+memAddrBus<12>|   11.872(R)|clkUART_IBUF      |   0.000|
+              |   11.970(F)|clkUART_IBUF      |   0.000|
+memAddrBus<13>|   11.439(R)|clkUART_IBUF      |   0.000|
+              |   11.462(F)|clkUART_IBUF      |   0.000|
+memAddrBus<14>|   11.254(R)|clkUART_IBUF      |   0.000|
+              |   11.234(F)|clkUART_IBUF      |   0.000|
+memAddrBus<15>|   11.060(R)|clkUART_IBUF      |   0.000|
+              |   11.649(F)|clkUART_IBUF      |   0.000|
+memDataBus<0> |   10.460(R)|clkUART_IBUF      |   0.000|
+memDataBus<1> |   12.121(R)|clkUART_IBUF      |   0.000|
+memDataBus<2> |   11.857(R)|clkUART_IBUF      |   0.000|
+memDataBus<3> |   11.859(R)|clkUART_IBUF      |   0.000|
+memDataBus<4> |   10.752(R)|clkUART_IBUF      |   0.000|
+memDataBus<5> |   11.563(R)|clkUART_IBUF      |   0.000|
+memDataBus<6> |   11.288(R)|clkUART_IBUF      |   0.000|
+memDataBus<7> |   10.719(R)|clkUART_IBUF      |   0.000|
+memDataBus<8> |   11.101(R)|clkUART_IBUF      |   0.000|
+memDataBus<9> |   12.014(R)|clkUART_IBUF      |   0.000|
+memDataBus<10>|   10.492(R)|clkUART_IBUF      |   0.000|
+memDataBus<11>|   11.301(R)|clkUART_IBUF      |   0.000|
+memDataBus<12>|   11.385(R)|clkUART_IBUF      |   0.000|
+memDataBus<13>|   12.545(R)|clkUART_IBUF      |   0.000|
+memDataBus<14>|   10.164(R)|clkUART_IBUF      |   0.000|
+memDataBus<15>|   11.598(R)|clkUART_IBUF      |   0.000|
+memRead       |   12.076(R)|clkUART_IBUF      |   0.000|
+memWrite      |   12.736(R)|clkUART_IBUF      |   0.000|
+ram1DataBus<0>|    9.996(R)|clkUART_IBUF      |   0.000|
+ram1DataBus<1>|   10.582(R)|clkUART_IBUF      |   0.000|
+ram1DataBus<2>|   10.844(R)|clkUART_IBUF      |   0.000|
+ram1DataBus<3>|   10.257(R)|clkUART_IBUF      |   0.000|
+ram1DataBus<4>|   11.095(R)|clkUART_IBUF      |   0.000|
+ram1DataBus<5>|   10.513(R)|clkUART_IBUF      |   0.000|
+ram1DataBus<6>|   11.036(R)|clkUART_IBUF      |   0.000|
+ram1DataBus<7>|   11.018(R)|clkUART_IBUF      |   0.000|
+rdn           |   16.907(R)|clkUART_IBUF      |   0.000|
+vgaB<0>       |   32.489(R)|clkUART_IBUF      |   0.000|
+              |   29.186(F)|clkUART_IBUF      |   0.000|
+vgaB<1>       |   32.036(R)|clkUART_IBUF      |   0.000|
+              |   28.733(F)|clkUART_IBUF      |   0.000|
+vgaB<2>       |   32.594(R)|clkUART_IBUF      |   0.000|
+              |   29.291(F)|clkUART_IBUF      |   0.000|
+vgaG<0>       |   32.497(R)|clkUART_IBUF      |   0.000|
+              |   29.194(F)|clkUART_IBUF      |   0.000|
+vgaG<1>       |   32.725(R)|clkUART_IBUF      |   0.000|
+              |   29.422(F)|clkUART_IBUF      |   0.000|
+vgaG<2>       |   33.000(R)|clkUART_IBUF      |   0.000|
+              |   29.697(F)|clkUART_IBUF      |   0.000|
+vgaR<0>       |   32.768(R)|clkUART_IBUF      |   0.000|
+              |   29.465(F)|clkUART_IBUF      |   0.000|
+vgaR<1>       |   32.774(R)|clkUART_IBUF      |   0.000|
+              |   29.471(F)|clkUART_IBUF      |   0.000|
+vgaR<2>       |   33.000(R)|clkUART_IBUF      |   0.000|
+              |   29.697(F)|clkUART_IBUF      |   0.000|
+wrn           |   15.324(R)|clkUART_IBUF      |   0.000|
+--------------+------------+------------------+--------+
+
+Clock rst to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+leddebug<0> |   19.257(F)|rst_IBUF          |   0.000|
+leddebug<1> |   19.131(F)|rst_IBUF          |   0.000|
+leddebug<2> |   18.780(F)|rst_IBUF          |   0.000|
+leddebug<3> |   18.270(F)|rst_IBUF          |   0.000|
+leddebug<4> |   19.044(F)|rst_IBUF          |   0.000|
+leddebug<5> |   19.367(F)|rst_IBUF          |   0.000|
+leddebug<6> |   18.739(F)|rst_IBUF          |   0.000|
+leddebug<7> |   19.104(F)|rst_IBUF          |   0.000|
+leddebug<8> |   18.269(F)|rst_IBUF          |   0.000|
+leddebug<9> |   18.654(F)|rst_IBUF          |   0.000|
+leddebug<10>|   19.214(F)|rst_IBUF          |   0.000|
+leddebug<11>|   18.659(F)|rst_IBUF          |   0.000|
+leddebug<12>|   18.424(F)|rst_IBUF          |   0.000|
+leddebug<13>|   18.169(F)|rst_IBUF          |   0.000|
+leddebug<14>|   19.331(F)|rst_IBUF          |   0.000|
+leddebug<15>|   18.512(F)|rst_IBUF          |   0.000|
+vgaB<0>     |   27.486(F)|rst_IBUF          |   0.000|
+vgaB<1>     |   27.033(F)|rst_IBUF          |   0.000|
+vgaB<2>     |   27.591(F)|rst_IBUF          |   0.000|
+vgaG<0>     |   27.494(F)|rst_IBUF          |   0.000|
+vgaG<1>     |   27.722(F)|rst_IBUF          |   0.000|
+vgaG<2>     |   27.997(F)|rst_IBUF          |   0.000|
+vgaR<0>     |   27.765(F)|rst_IBUF          |   0.000|
+vgaR<1>     |   27.771(F)|rst_IBUF          |   0.000|
+vgaR<2>     |   27.997(F)|rst_IBUF          |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |         |    1.526|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkUART
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkUART        |    3.553|   12.512|   13.098|   13.650|
+rst            |         |    3.519|   10.207|   12.075|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rst
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkUART        |         |         |    9.328|    4.281|
+rst            |         |         |         |    2.169|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clkUART        |memAddrBus<0>  |   11.590|
+clkUART        |memAddrBus<1>  |   11.934|
+clkUART        |memAddrBus<2>  |   11.490|
+clkUART        |memAddrBus<3>  |   11.941|
+clkUART        |memAddrBus<4>  |   12.150|
+clkUART        |memAddrBus<5>  |   11.613|
+clkUART        |memAddrBus<6>  |   12.006|
+clkUART        |memAddrBus<7>  |   12.474|
+clkUART        |memAddrBus<8>  |   13.382|
+clkUART        |memAddrBus<9>  |   12.551|
+clkUART        |memAddrBus<10> |   11.706|
+clkUART        |memAddrBus<11> |   11.855|
+clkUART        |memAddrBus<12> |   12.785|
+clkUART        |memAddrBus<13> |   12.781|
+clkUART        |memAddrBus<14> |   12.744|
+clkUART        |memAddrBus<15> |   12.570|
+clkUART        |memDataBus<0>  |   12.094|
+clkUART        |memDataBus<1>  |   13.755|
+clkUART        |memDataBus<2>  |   13.486|
+clkUART        |memDataBus<3>  |   13.488|
+clkUART        |memDataBus<4>  |   12.383|
+clkUART        |memDataBus<5>  |   13.194|
+clkUART        |memDataBus<6>  |   12.922|
+clkUART        |memDataBus<7>  |   12.353|
+clkUART        |memDataBus<8>  |   12.700|
+clkUART        |memDataBus<9>  |   13.613|
+clkUART        |memDataBus<10> |   12.106|
+clkUART        |memDataBus<11> |   12.915|
+clkUART        |memDataBus<12> |   12.987|
+clkUART        |memDataBus<13> |   14.147|
+clkUART        |memDataBus<14> |   11.792|
+clkUART        |memDataBus<15> |   13.226|
+clkUART        |memRead        |   13.171|
+clkUART        |memWrite       |   14.430|
+clkUART        |rdn            |   11.010|
+clkUART        |wrn            |   14.533|
+dataReady      |leddebug<0>    |   16.506|
+dataReady      |leddebug<1>    |   16.688|
+dataReady      |leddebug<2>    |   16.387|
+dataReady      |leddebug<3>    |   16.261|
+dataReady      |leddebug<4>    |   16.340|
+dataReady      |leddebug<5>    |   16.702|
+dataReady      |leddebug<6>    |   16.223|
+dataReady      |leddebug<7>    |   16.251|
+dataReady      |leddebug<8>    |   16.260|
+dataReady      |leddebug<9>    |   16.350|
+dataReady      |leddebug<10>   |   16.248|
+dataReady      |leddebug<11>   |   16.650|
+dataReady      |leddebug<12>   |   16.415|
+dataReady      |leddebug<13>   |   16.160|
+dataReady      |leddebug<14>   |   17.322|
+dataReady      |leddebug<15>   |   16.503|
+dataReady      |vgaB<0>        |   25.159|
+dataReady      |vgaB<1>        |   24.706|
+dataReady      |vgaB<2>        |   25.264|
+dataReady      |vgaG<0>        |   25.167|
+dataReady      |vgaG<1>        |   25.395|
+dataReady      |vgaG<2>        |   25.670|
+dataReady      |vgaR<0>        |   25.438|
+dataReady      |vgaR<1>        |   25.444|
+dataReady      |vgaR<2>        |   25.670|
+rst            |leddebug<0>    |   15.333|
+rst            |leddebug<1>    |   15.163|
+rst            |leddebug<2>    |   14.878|
+rst            |leddebug<3>    |   14.736|
+rst            |leddebug<4>    |   14.961|
+rst            |leddebug<5>    |   15.373|
+rst            |leddebug<6>    |   15.093|
+rst            |leddebug<7>    |   15.397|
+rst            |leddebug<8>    |   15.453|
+rst            |leddebug<9>    |   15.581|
+rst            |leddebug<10>   |   16.437|
+rst            |leddebug<11>   |   16.572|
+rst            |leddebug<12>   |   16.597|
+rst            |leddebug<13>   |   16.705|
+rst            |leddebug<14>   |   16.949|
+rst            |leddebug<15>   |   16.778|
+rst            |rdn            |   11.693|
+rst            |vgaB<0>        |   25.332|
+rst            |vgaB<1>        |   24.879|
+rst            |vgaB<2>        |   25.437|
+rst            |vgaG<0>        |   25.340|
+rst            |vgaG<1>        |   25.568|
+rst            |vgaG<2>        |   25.843|
+rst            |vgaR<0>        |   25.611|
+rst            |vgaR<1>        |   25.617|
+rst            |vgaR<2>        |   25.843|
+rst            |wrn            |   13.874|
+tbre           |leddebug<0>    |   19.573|
+tbre           |leddebug<1>    |   18.693|
+tbre           |leddebug<2>    |   18.392|
+tbre           |leddebug<3>    |   18.266|
+tbre           |leddebug<4>    |   18.345|
+tbre           |leddebug<5>    |   18.707|
+tbre           |leddebug<6>    |   18.228|
+tbre           |leddebug<7>    |   18.256|
+tbre           |leddebug<8>    |   18.265|
+tbre           |leddebug<9>    |   18.355|
+tbre           |leddebug<10>   |   18.253|
+tbre           |leddebug<11>   |   18.655|
+tbre           |leddebug<12>   |   18.420|
+tbre           |leddebug<13>   |   18.165|
+tbre           |leddebug<14>   |   19.327|
+tbre           |leddebug<15>   |   18.508|
+tbre           |vgaB<0>        |   27.164|
+tbre           |vgaB<1>        |   26.711|
+tbre           |vgaB<2>        |   27.269|
+tbre           |vgaG<0>        |   27.172|
+tbre           |vgaG<1>        |   27.400|
+tbre           |vgaG<2>        |   27.675|
+tbre           |vgaR<0>        |   27.443|
+tbre           |vgaR<1>        |   27.449|
+tbre           |vgaR<2>        |   27.675|
+tsre           |leddebug<0>    |   19.587|
+tsre           |leddebug<1>    |   18.707|
+tsre           |leddebug<2>    |   18.406|
+tsre           |leddebug<3>    |   18.280|
+tsre           |leddebug<4>    |   18.359|
+tsre           |leddebug<5>    |   18.721|
+tsre           |leddebug<6>    |   18.242|
+tsre           |leddebug<7>    |   18.270|
+tsre           |leddebug<8>    |   18.279|
+tsre           |leddebug<9>    |   18.369|
+tsre           |leddebug<10>   |   18.267|
+tsre           |leddebug<11>   |   18.669|
+tsre           |leddebug<12>   |   18.434|
+tsre           |leddebug<13>   |   18.179|
+tsre           |leddebug<14>   |   19.341|
+tsre           |leddebug<15>   |   18.522|
+tsre           |vgaB<0>        |   27.178|
+tsre           |vgaB<1>        |   26.725|
+tsre           |vgaB<2>        |   27.283|
+tsre           |vgaG<0>        |   27.186|
+tsre           |vgaG<1>        |   27.414|
+tsre           |vgaG<2>        |   27.689|
+tsre           |vgaR<0>        |   27.457|
+tsre           |vgaR<1>        |   27.463|
+tsre           |vgaR<2>        |   27.689|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 04 16:41:31 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 303 MB
+
+
+
